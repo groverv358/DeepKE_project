@@ -45,9 +45,9 @@ def _get_predict_instance(cfg):
     flag = input('是否使用范例[y/n]，退出请输入: exit .... ')
     flag = flag.strip().lower()
     if flag == 'y' or flag == 'yes':
-        sentence = '张冬梅，女，汉族，1968年2月生，河南淇县人，1988年7月加入中国共产党，1989年9月参加工作，中央党校经济管理专业毕业，中央党校研究生学历'
-        entity = '张冬梅'
-        attribute_value = '汉族'
+        sentence = 'Sheeran 的首張專輯「+」（「Plus」）於 2011 年 9 月發行，並榮登英國專輯榜榜首。 其中包含他的第一首熱門單曲“The A Team”。'
+        entity = 'Sheeran'
+        attribute_value = '專輯《+》（「Plus」）'
     elif flag == 'n' or flag == 'no':
         sentence = input('请输入句子：')
         entity = input('请输入句中需要预测的实体：')
